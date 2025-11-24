@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.All;
 using LeetCode.All.Greatest_Sum_Divisible_by_Three;
 
 namespace LeetCode
@@ -7,8 +8,10 @@ namespace LeetCode
     {
         public static void Main(string[] args)
         {
-            var res = Greatest_Sum_Divisible_by_Three.MaxSumDivThree(new int[] { 3, 6, 5, 1, 8 });    
-            Console.WriteLine(res);
+            //var res = Greatest_Sum_Divisible_by_Three.MaxSumDivThree(new int[] { 3, 6, 5, 1, 8 });    
+            //var res = ConfusingNumberSolution.Do(89);    
+            //Console.WriteLine(res);
+            Console.WriteLine("LeetCode!!!");
         }
     }
 }
