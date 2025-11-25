@@ -1,0 +1,25 @@
+using System;
+
+namespace LeetCode.All;
+
+public class MaximumDistanceInArraysSolution
+{
+    public int MaxDistance(IList<IList<int>> arrays)
+    {
+        IList<int> array1, array2;
+        var res = 0;
+        int n = arrays.Count;
+        for (int i = 0; i < n - 1; i++) 
+        {
+            for (int j = i + 1; j < n; j++)
+            {
+                array1 = arrays[i];
+                array2 = arrays[j];
+                res = Math.Max(res, Math.Abs(array1[0] - array2[array2.Count - 1]));
+                res = Math.Max(res, Math.Abs(array2[0] - array1[array1.Count - 1]));
+            }
+        }
+
+        return res;
+    }
+}
